@@ -1,0 +1,30 @@
+<style>
+  /* Önceki stillere ek olarak */
+  .bar-container { margin-top: 20px; background: #fff; padding: 15px; border-radius: 10px; }
+  .bar-row { display: flex; align-items: flex-end; gap: 10px; height: 150px; border-bottom: 2px solid #eee; }
+  .bar { flex: 1; transition: height 0.3s; position: relative; display: flex; flex-direction: column-reverse; }
+  .segment { width: 100%; }
+  .label { font-size: 10px; text-align: center; margin-top: 5px; }
+  
+  /* Renkler */
+  .crit { background: #e74c3c; } /* Kritik */
+  .high-bg { background: #e67e22; } /* Yüksek */
+  .med-bg { background: #f1c40f; } /* Orta */
+</style>
+
+<div class="bar-container">
+  <h4>Sistem Bazlı Bulgular</h4>
+  <div class="bar-row">
+    <div class="bar">
+      <div class="label">Kariyer</div>
+      <div class="segment crit" style="height: 20%;"></div>
+      <div class="segment high-bg" style="height: 50%;"></div>
+      <div class="segment med-bg" style="height: 10%;"></div>
+    </div>
+    <div class="bar">
+      <div class="label">Gigawiki</div>
+      <div class="segment high-bg" style="height: 30%;"></div>
+      <div class="segment med-bg" style="height: 40%;"></div>
+    </div>
+  </div>
+</div>
